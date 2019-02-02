@@ -17,5 +17,26 @@ module.exports = {
                 cb(err, docs);
             });
         });
+    },
+    //to delete articles
+    delete: function(query, cb) {
+        Headline.remove(query, cb);
+    },
+    //sorting headlines from less recent to most recent
+    get: function(query, cb) {
+        Headline.find(query)
+        .sort({
+            _id: -1
+        })
+        .exec(function(err, doc) {
+            cb(doc);
+        });
+    },
+    //update our articles
+    update: function(query, cb) {
+        Headline.update({_id: query._id}, {
+            $set: query
+        }, {}, cb);
     }
-}
+
+ }
