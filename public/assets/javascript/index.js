@@ -68,7 +68,7 @@ $(document).ready(function () {
                 "<h3>What would you like to do?</h3>",
                 "</div>",
                 "<div class = 'panel-body text-center'>",
-                "<h4><a class='scrape-new'>Try SCraping New Articles</a><h4>",
+                "<h4><a class='scrape-new'>Try Scraping New Articles</a><h4>",
                 "<h4><a href='/saved'>Go to Saved Articles</a></h4>",
                 "</div>",
                 "</div>"
